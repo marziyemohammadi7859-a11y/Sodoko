@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>سودوکوی کوچولوها</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <h1>🧩 سودوکوی کوچولوها</h1>
+
+        <p class="subtitle">
+            باهوش باش! خانه‌های خالی را پر کن 🌈
+        </p>
+
+        <div class="stars" id="stars">⭐ ⭐ ⭐</div>
+
+        <div class="game-info">
+            <span>🎯 اعداد ۱ تا ۶</span>
+            <span id="status">برای بازی آماده‌ای؟</span>
+        </div>
+
+        <div id="sudoku-board" class="sudoku-board"
+             aria-label="جدول سودوکو">
+        </div>
+
+        <div class="number-buttons" id="number-buttons">
+            <button class="number-btn" data-number="1">۱</button>
+            <button class="number-btn" data-number="2">۲</button>
+            <button class="number-btn" data-number="3">۳</button>
+            <button class="number-btn" data-number="4">۴</button>
+            <button class="number-btn" data-number="5">۵</button>
+            <button class="number-btn" data-number="6">۶</button>
+            <button class="number-btn erase-btn" data-number="0">پاک‌کن</button>
+        </div>
+
+        <div class="main-buttons">
+            <button id="start-btn" class="start-btn">
+                ▶️ شروع بازی
+            </button>
+
+            <button id="end-btn" class="end-btn" disabled>
+                ⏹ پایان بازی
+            </button>
+        </div>
+
+        <p id="message" class="message" aria-live="polite">
+            روی شروع بازی بزن و ماجراجویی را آغاز کن!
+        </p>
+
+        <div class="help">
+            💡 راهنما: در هر سطر، ستون و پنجره، هر عدد فقط یک بار!
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
